@@ -29,7 +29,7 @@ nav a:hover{
 }
 
 .bc-header{
-    background-image: url(/Resources/descarga.jpg);
+    background-image: url(../Resources/descarga.jpg);
     width: 100%;
     height: 500px;
     background-size: cover;
@@ -49,7 +49,6 @@ nav a:hover{
     padding-left: 0%;
     padding-right: 1.5rem;
     padding-top: 2%;
-
 }
 
 .segundo{
@@ -93,91 +92,89 @@ img{
 
 
 .grid-item {
-    
-    
-    padding: 20px;
-  }
+  padding: 20px;
+}
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    padding: 20px;
-  }
-  
-  .item1 {
-    color: white;
-    padding: 20px;
-    background-color: dimgray;
-    text-align: center;
-    grid-column: span 5;
-    grid-row: span 1;
-  }
-  
-  .item2 {
-    grid-column: span 1;
-    grid-row: span 3;
-    border: 1px solid black;
-  }
-  .menu1{
-    padding-top: 80%;
-  }
-  
-  .item3 {
-    grid-column: span 4;
-    grid-row: span 1;
-  }
-  
-  .item4 {
-    grid-column: span 2;
-    grid-row: span 2;
-    background-image: url(../Resources/descarga3.png);
-    background-size: cover;
-  }
-  
-  .item5 {
-    grid-column: span 2;
-    grid-row: span 2;
-    background-image: url(../Resources/descarga3.png);
-    background-size: cover;
-  }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
 
-  .img1carta{
-    width: 100%;
-    height: 100%;
-  }
+.item1 {
+  color: white;
+  padding: 20px;
+  background-color: dimgray;
+  text-align: center;
+  grid-column: span 5;
+  grid-row: span 1;
+}
 
-  .img2carta{
-    width: 100%;
-    height: 100%;   
-  }
+.item2 {
+  grid-column: span 1;
+  grid-row: span 3;
+  border: 1px solid black;
+}
+.menu1{
+  padding-top: 80%;
+}
 
-  .texto1menu{
-    width: 100%;
-    height: 200px;
-    text-align: center;
-    color: black;
-  }
+.item3 {
+  grid-column: span 4;
+  grid-row: span 1;
+}
 
-  .img-com{
-    background-image: url(../Resources/comida-rapida-casera.png);
-    background-size: cover;
-    background-position: center;
-    width: 23%;
-    height: 200px;
-    background-blend-mode: multiply;
+.item4 {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-image: url(../Resources/descarga3.png);
+  background-size: cover;
+}
 
-  }
+.item5 {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-image: url(../Resources/descarga3.png);
+  background-size: cover;
+}
 
-  .galeria{
-    gap: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-  }
+.img1carta{
+  width: 100%;
+  height: 100%;
+}
 
-  .oscuras{
-    background-color: rgb(0,0,0,.30);
-  }
+.img2carta{
+  width: 100%;
+  height: 100%;   
+}
+
+.texto1menu{
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  color: black;
+}
+
+.img-com{
+  background-image: url(../Resources/comida-rapida-casera.png);
+  background-size: cover;
+  background-position: center;
+  width: 23%;
+  height: 200px;
+  background-blend-mode: multiply;
+
+}
+
+.galeria{
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.oscuras{
+  background-color: rgb(0,0,0,.30);
+}
 
 .flex-hover:hover{
   background-color: rgb(0,0,0,.50);
@@ -198,4 +195,74 @@ footer{
 
 .padding{
   padding-right: 0.5rem;
+}
+
+@media (max-width: 800px){
+ 
+ /* parte de sobre nosotros */
+  .primero{
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+ }
+ .segundo{
+  padding: 0px;
+ }
+ img {
+  width: 100%;
+  height: auto;
+ }
+ .img2 {
+  float: none;
+ }
+ .texto1{
+  padding: 10px 0px;
+ }
+ .texto2{
+  padding: 10px 0px;
+ }
+
+/* parte del menu */
+ .item2{
+  grid-row: span 5;
+ }
+ .item4{
+  grid-column: span 4;
+ }
+ .item5{
+  grid-column: span 4;
+ }
+ /* parte inferior */
+ .img-com{
+  width: 48%;
+ }
+}
+
+@media (max-width: 600px){
+  .nosotros{
+    margin: 5%;
+    font-size: 30px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  .item2{
+    grid-column: span 5;
+    grid-row: span 1;
+  }
+  .menu1 {
+    padding-top: 0%;
+  }
+  .item3{
+    grid-column: span 5;
+  }
+  .item4{
+    grid-column: span 5;
+   }
+   .item5{
+    grid-column: span 5;
+   }
+  .img-com{
+    width: 100%;
+  }
 }
